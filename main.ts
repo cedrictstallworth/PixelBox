@@ -25,9 +25,9 @@ namespace PixelBox{
     
     //% blockId=PixelBox_setPixel
 
-    //% block ="$c00 $c01 $c02 $c03 $c04 $c05 $c06 $c07"
-    //% block ="$c08 $c09 $c10 $c11 $c12 $c13 $c14 $c15"
-
+    //% block ="$c00 $c01 $c02 $c03 $c04 $c05 $c06 $c07$c08 $c09 $c10 $c11 $c12 $c13 $c14 $c15"
+    //% inlineInputMode=inline
+    
     //% c00.shadow="colorNumberPicker"
     //% c01.shadow="colorNumberPicker"
     //% c02.shadow="colorNumberPicker"
