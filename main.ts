@@ -22,11 +22,11 @@ namespace PixelBox{
      * * Set pixel color with x y indexing
      */
     //% blockId=PixelBox_setPixel
-    //% block="set pixel(x=$x y=$y) to green"
-    //% x.min=0 x.max=8
-    //% y.min=0 y.max=8
-    export function setPixel(x: number, y:number): void {
-        let color = NeoPixelColors.Blue;
+    //% block="set pixel (x=$x , y=$y) to $color"
+    //% x.min=0 x.max=7
+    //% y.min=0 y.max=7
+    //% color = [NeoPixelColors.Red, NeoPixelColors.Green, NeoPixelColors.Blue]
+    export function setPixel(x: number, y:number, color:NeoPixelColors): void {
         pixelbox.setMatrixColor(x, y, neopixel.colors(color));
         pixelbox.show();
     }
