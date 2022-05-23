@@ -22,7 +22,7 @@ namespace PixelBox{
      * * Set pixel color with x y indexing
      */
     //% blockId=PixelBox_setPixel
-    // block="set pixel (x=$x , y=$y) to color=$c"
+    /* block="set pixel (x=$x , y=$y) to color=$c" */
     //% block ="$c00 $c01"
     //% x.min=0 x.max=7
     //% y.min=0 y.max=7
