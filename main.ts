@@ -22,7 +22,10 @@ namespace PixelBox{
      * * Set pixel color with x y indexing "$c00 $c01 $c02 $c03 $c04 $c05 $c06 $c07"
      */
     //% blockId=PixelBox_setPixel
+    //% inlineInputMode=inline
     //% block ="$c00| $c01| $c02| $c03| $c04| $c05| $c06| $c07"
+    //% inlineInputMode=external
+    //% inlineInputMode=inline
     //% block ="$c08"
     //% c00.shadow="colorNumberPicker"
     //% c01.shadow="colorNumberPicker"
@@ -33,8 +36,6 @@ namespace PixelBox{
     //% c06.shadow="colorNumberPicker"
     //% c07.shadow="colorNumberPicker"
     //% c08.shadow="colorNumberPicker"
-    //% inlineInputMode=inline
-    //% expandableArgumentMode="enable"
 
      export function setPixel(
          c00: number, c01: number, c02: number, c03: number, c04: number, c05: number, c06: number, c07: number,
