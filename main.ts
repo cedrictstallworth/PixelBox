@@ -44,16 +44,12 @@ namespace PixelBox{
     
     //% blockId=PixelBox_setPixel
     
-    /**
-    //% inlineInputMode=inline
-    //% block ="$varname=variables_get(pic) $c00| $c01| $c02| $c03| $c04| $c05| $c06| $c07"
-    //% inlineInputMode=external
-    */
+ 
     
     //% block
-    //% gesture.fieldEditor="gridpicker"
-    //% gesture.fieldOptions.width=220
-    //% gesture.fieldOptions.columns=8
+    //% pixels.fieldEditor="gridpicker"
+    //% pixels.fieldOptions.width=220
+    //% pixels.fieldOptions.columns=8
     
     //% c00.shadow="colorNumberPicker"
     //% c01.shadow="colorNumberPicker"
