@@ -25,8 +25,9 @@ namespace PixelBox{
     //% block="set pixel (x=$x , y=$y) to color=$c"
     //% x.min=0 x.max=7
     //% y.min=0 y.max=7
-     export function setPixel(x: number, y:number, c:NeoPixelColors): void {
-        pixelbox.setMatrixColor(x, y, neopixel.colors(c));
+    //% c.shadow="colorNumberPicker"
+     export function setPixel(x: number, y:number, c:number): void {
+        pixelbox.setMatrixColor(x, y, c);
         pixelbox.show();
     }
 }
