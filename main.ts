@@ -26,7 +26,8 @@ namespace PixelBox{
     //% x.min=0 x.max=8
     //% y.min=0 y.max=8
     export function setPixel(x: number, y:number): void {
-        pixelbox.setMatrixColor(x, y, neopixel.colors(NeoPixelColors.Green));
+        let color = NeoPixelColors.Blue;
+        pixelbox.setMatrixColor(x, y, neopixel.colors(color));
         pixelbox.show();
     }
 }
