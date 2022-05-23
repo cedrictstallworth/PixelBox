@@ -1,3 +1,23 @@
+//%color="#4B0082" icon="\u2592"
+enum pixels{
+    //% block ="$c00" 
+    //% block= "$c01" 
+    //% block= "$c02" 
+    //% block= "$c03" 
+    //% block= "$c04" 
+    //% block= "$c05" 
+    //% block= "$c06" 
+    //% block= "$c07"
+    //% block ="$c08" 
+    //% block= "$c09" 
+    //% block= "$c10" 
+    //% block= "$c11" 
+    //% block= "$c12" 
+    //% block= "$c13" 
+    //% block= "$c14" 
+    //% block= "$c15"
+}
+
 namespace PixelBox{
     /**
      * Define Variables
@@ -21,12 +41,20 @@ namespace PixelBox{
     /**
      * * Set pixel color with x y indexing "$c00 $c01 $c02 $c03 $c04 $c05 $c06 $c07"
      */
+    
     //% blockId=PixelBox_setPixel
+    
+    /**
     //% inlineInputMode=inline
-    //% block ="$c00| $c01| $c02| $c03| $c04| $c05| $c06| $c07"
+    //% block ="$varname=variables_get(pic) $c00| $c01| $c02| $c03| $c04| $c05| $c06| $c07"
     //% inlineInputMode=external
-    //% inlineInputMode=inline
-    //% block ="$c08"
+    */
+    
+    //% block
+    //% gesture.fieldEditor="gridpicker"
+    //% gesture.fieldOptions.width=220
+    //% gesture.fieldOptions.columns=8
+    
     //% c00.shadow="colorNumberPicker"
     //% c01.shadow="colorNumberPicker"
     //% c02.shadow="colorNumberPicker"
@@ -37,7 +65,7 @@ namespace PixelBox{
     //% c07.shadow="colorNumberPicker"
     //% c08.shadow="colorNumberPicker"
 
-     export function setPixel(
+     export function setPixel(varname: string,
          c00: number, c01: number, c02: number, c03: number, c04: number, c05: number, c06: number, c07: number,
          c08: number)
          : void {
