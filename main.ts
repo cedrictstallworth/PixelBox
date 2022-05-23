@@ -25,8 +25,8 @@ namespace PixelBox{
     //% block ="$c"
     //% c.shadow="colorNumberPicker"
 
-     export function setPixel(x: number, y:number, c:number): void {
-        pixelbox.setMatrixColor(x, y, c);
+     export function setPixel(c:number): void {
+        pixelbox.setMatrixColor(0, 0, c);
         pixelbox.show();
     }
 }
