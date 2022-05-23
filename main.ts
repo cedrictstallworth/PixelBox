@@ -25,7 +25,7 @@ namespace PixelBox{
     
     //% blockId=PixelBox_setPixel
 
-    //% block ="$c00 $c01 $c02 $c03 $c04 $c05 $c06 $c07$c08 $c09 $c10 $c11 $c12 $c13 $c14 $c15"
+    //% block ="$c00 $c01 $c02 $c03 $c04 $c05 $c06 $c07 \n $c08 $c09 $c10 $c11 $c12 $c13 $c14 $c15"
     //% inlineInputMode=inline
     
     //% c00.shadow="colorNumberPicker"
@@ -37,6 +37,14 @@ namespace PixelBox{
     //% c06.shadow="colorNumberPicker"
     //% c07.shadow="colorNumberPicker"
     //% c08.shadow="colorNumberPicker"
+    //% c09.shadow="colorNumberPicker"
+    //% c10.shadow="colorNumberPicker"
+    //% c11.shadow="colorNumberPicker"
+    //% c12.shadow="colorNumberPicker"
+    //% c13.shadow="colorNumberPicker"
+    //% c14.shadow="colorNumberPicker"
+    //% c15.shadow="colorNumberPicker"
+ 
 
      export function setPixel(
          c00: number, c01: number, c02: number, c03: number, c04: number, c05: number, c06: number, c07: number,
