@@ -23,6 +23,7 @@ namespace PixelBox{
      */
     //% blockId=PixelBox_setPixel
     //% block ="|| $c00 || $c01 $c02 $c03 $c04 $c05 $c06 $c07"
+    //% expandableArgumentMode="toggle"
     //% c00.shadow="colorNumberPicker"
     //% c01.shadow="colorNumberPicker"
     //% c02.shadow="colorNumberPicker"
