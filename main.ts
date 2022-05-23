@@ -22,7 +22,7 @@ namespace PixelBox{
      * * Set pixel color with x y indexing
      */
     //% blockId=PixelBox_setPixel
-    //% block ="$c"
+    //% block ="\n $c"
     //% c.shadow="colorNumberPicker"
 
      export function setPixel(c:number): void {
