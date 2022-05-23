@@ -7,6 +7,33 @@ namespace PixelBox{
     pixelbox = neopixel.create(DigitalPin.P0, 64, NeoPixelMode.RGB);
     pixelbox.setMatrixWidth(8);
     pixelbox.clear();
+    
+    /**
+    * Define Colors
+    */
+    enum RoverColors {
+        //% block="red"
+        Red = 0xFF0000,
+        //% block="orange"
+        Orange = 0xFFA500,
+        //% block="yellow"
+        Yellow = 0xFFFF00,
+        //% block="green"
+        Green = 0x00FF00,
+        //% block="blue"
+        Blue = 0x0000FF,
+        //% block="indigo"
+        Indigo = 0x4b0082,
+        //% block="violet"
+        Violet = 0x8a2be2,
+        //% block="purple"
+        Purple = 0xFF00FF,
+        //% block="white"
+        White = 0xFFFFFF,
+        //% block="black"
+        Black = 0x000000
+    }
+    
     /**
      * * Address LEDs with linear index
      */
@@ -44,6 +71,7 @@ namespace PixelBox{
     //% c13.shadow="colorNumberPicker"
     //% c14.shadow="colorNumberPicker"
     //% c15.shadow="colorNumberPicker"
+    //% c15.shadow=
  
 
      export function setPixel(
