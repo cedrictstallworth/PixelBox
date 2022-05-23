@@ -22,12 +22,12 @@ namespace PixelBox{
      * * Set pixel color with x y indexing
      */
     //% blockId=PixelBox_setPixel
-    //% block="set pixel (x=$x , y=$y) to $color"
+    //% block="set pixel (x=$x , y=$y) to color=$c"
     //% x.min=0 x.max=7
     //% y.min=0 y.max=7
-    //% color = [NeoPixelColors.Red, NeoPixelColors.Green, NeoPixelColors.Blue]
-    export function setPixel(x: number, y:number, color:NeoPixelColors): void {
-        pixelbox.setMatrixColor(x, y, neopixel.colors(color));
+    //% c = [NeoPixelColors.Red, NeoPixelColors.Green, NeoPixelColors.Blue]
+    export function setPixel(x: number, y:number, c:NeoPixelColors): void {
+        pixelbox.setMatrixColor(x, y, neopixel.colors(c));
         pixelbox.show();
     }
 }
