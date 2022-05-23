@@ -25,22 +25,8 @@ namespace PixelBox{
     
     //% blockId=PixelBox_setPixel
 
-    //% block ="$c00"
-    //% block= "$c01" 
-    //% block= "$c02" 
-    //% block= "$c03" 
-    //% block= "$c04" 
-    //% block= "$c05" 
-    //% block= "$c06" 
-    //% block= "$c07"
-    //% block ="$c08" 
-    //% block= "$c09" 
-    //% block= "$c10" 
-    //% block= "$c11" 
-    //% block= "$c12" 
-    //% block= "$c13" 
-    //% block= "$c14" 
-    //% block= "$c15"
+    //% block ="$c00 $c01 $c02 $c03 $c04 $c05 $c06 $c07"
+    //% block ="$c08 $c09 $c10 $c11 $c12 $c13 $c14 $c15"
 
     //% c00.shadow="colorNumberPicker"
     //% c01.shadow="colorNumberPicker"
@@ -54,7 +40,7 @@ namespace PixelBox{
 
      export function setPixel(
          c00: number, c01: number, c02: number, c03: number, c04: number, c05: number, c06: number, c07: number,
-         c08: number)
+         c08: number, c09: number, c10: number, c11: number, c12: number, c13: number, c14: number, c15: number)
          : void {
         pixelbox.setMatrixColor(0, 0, c00);
         pixelbox.show();
