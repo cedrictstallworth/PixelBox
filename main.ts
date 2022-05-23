@@ -22,10 +22,12 @@ namespace PixelBox{
      * * Set pixel color with x y indexing
      */
     //% blockId=PixelBox_setPixel
-    //% block="set pixel (x=$x , y=$y) to color=$c"
+    // block="set pixel (x=$x , y=$y) to color=$c"
+    //% block ="$c00 $c01"
     //% x.min=0 x.max=7
     //% y.min=0 y.max=7
-    //% c.shadow="colorNumberPicker"
+    //% c00.shadow="colorNumberPicker"
+    //% c01.shadow="colorNumberPicker"
      export function setPixel(x: number, y:number, c:number): void {
         pixelbox.setMatrixColor(x, y, c);
         pixelbox.show();
