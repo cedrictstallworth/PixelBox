@@ -1,4 +1,3 @@
-//%color="#4B0082" icon="\u2592"
 enum pixels{
     //% block ="$c00" 
     //% block= "$c01" 
@@ -16,8 +15,18 @@ enum pixels{
     //% block= "$c13" 
     //% block= "$c14" 
     //% block= "$c15"
+    //% c00.shadow="colorNumberPicker"
+    //% c01.shadow="colorNumberPicker"
+    //% c02.shadow="colorNumberPicker"
+    //% c03.shadow="colorNumberPicker"
+    //% c04.shadow="colorNumberPicker"
+    //% c05.shadow="colorNumberPicker"
+    //% c06.shadow="colorNumberPicker"
+    //% c07.shadow="colorNumberPicker"
+    //% c08.shadow="colorNumberPicker"
 }
 
+//%color="#4B0082" icon="\u2592"
 namespace PixelBox{
     /**
      * Define Variables
@@ -39,7 +48,7 @@ namespace PixelBox{
     }
 
     /**
-     * * Set pixel color with x y indexing "$c00 $c01 $c02 $c03 $c04 $c05 $c06 $c07"
+     * * Set pixel color by clicking on the pixel and selecting a color
      */
     
     //% blockId=PixelBox_setPixel
@@ -51,17 +60,9 @@ namespace PixelBox{
     //% pixels.fieldOptions.width=220
     //% pixels.fieldOptions.columns=8
     
-    //% c00.shadow="colorNumberPicker"
-    //% c01.shadow="colorNumberPicker"
-    //% c02.shadow="colorNumberPicker"
-    //% c03.shadow="colorNumberPicker"
-    //% c04.shadow="colorNumberPicker"
-    //% c05.shadow="colorNumberPicker"
-    //% c06.shadow="colorNumberPicker"
-    //% c07.shadow="colorNumberPicker"
-    //% c08.shadow="colorNumberPicker"
 
-     export function setPixel(varname: string,
+
+     export function setPixel(
          c00: number, c01: number, c02: number, c03: number, c04: number, c05: number, c06: number, c07: number,
          c08: number)
          : void {
