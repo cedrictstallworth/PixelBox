@@ -3,37 +3,13 @@ namespace PixelBox{
     /**
      * Define Variables
      */
-    let pixelbox: neopixel.Strip = null;
+    
+    /* let pixelbox: neopixel.Strip = null;
     pixelbox = neopixel.create(DigitalPin.P0, 64, NeoPixelMode.RGB);
     pixelbox.setMatrixWidth(8);
     pixelbox.clear();
-    
-    /**
-    * Define Colors
     */
-    enum RoverColors {
-        //% block="red"
-        Red = 0xFF0000,
-        //% block="orange"
-        Orange = 0xFFA500,
-        //% block="yellow"
-        Yellow = 0xFFFF00,
-        //% block="green"
-        Green = 0x00FF00,
-        //% block="blue"
-        Blue = 0x0000FF,
-        //% block="indigo"
-        Indigo = 0x4b0082,
-        //% block="violet"
-        Violet = 0x8a2be2,
-        //% block="purple"
-        Purple = 0xFF00FF,
-        //% block="white"
-        White = 0xFFFFFF,
-        //% block="black"
-        Black = 0x000000
-    }
-    
+       
     /**
      * * Address LEDs with linear index
      */
@@ -49,10 +25,24 @@ namespace PixelBox{
     /**
      * * Set pixel color by clicking on the pixel and selecting a color
      */
-    
+
+    /**
+         * Draws an image on the LED screen.
+         * @param leds the pattern of LED to turn on/off
+         * @param interval time in milliseconds to pause after drawing
+         */
+    /*
+    //% help=basic/show-leds
+    //% weight=95 blockGap=8
+    //% imageLiteral=1 async
+    //% blockId=device_show_leds
+    //% block="show leds" icon="\uf00a"
+    //% parts="ledmatrix"
+    */
+
     //% blockId=PixelBox_setPixel
 
-    //% block ="$c00 $c01 $c02 $c03 $c04 $c05 $c06 $c07 \n $c08 $c09 $c10 $c11 $c12 $c13 $c14 $c15"
+    //% block ="$varname=variables_get(pic), $c00 $c01 $c02 $c03 $c04 $c05 $c06 $c07 \uf00a $c08 $c09 $c10 $c11 $c12 $c13 $c14 $c15"
     //% inlineInputMode=inline
     
     //% c00.shadow="colorNumberPicker"
@@ -71,14 +61,14 @@ namespace PixelBox{
     //% c13.shadow="colorNumberPicker"
     //% c14.shadow="colorNumberPicker"
     //% c15.shadow="colorNumberPicker"
-    //% c15.shadow=
- 
 
-     export function setPixel(
+
+    export function setPixel(varname: string,
          c00: number, c01: number, c02: number, c03: number, c04: number, c05: number, c06: number, c07: number,
          c08: number, c09: number, c10: number, c11: number, c12: number, c13: number, c14: number, c15: number)
          : void {
-        pixelbox.setMatrixColor(0, 0, c00);
-        pixelbox.show();
+        
+        
+
     }
 }
