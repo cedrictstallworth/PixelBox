@@ -28,7 +28,7 @@ namespace PixelBox{
 
     //% blockId=PixelBox_setPixelImage
 
-    //% block ="Set Pixel Image ||$c00 $c01 $c02 $c03 $c04 $c05 $c06 $c07 ||$c08 $c09 $c10 $c11 $c12 $c13 $c14 $c15"
+    //% block ="Set Pixel Image || $c00 $c01 $c02 $c03 $c04 $c05 $c06 $c07 || $c08 $c09 $c10 $c11 $c12 $c13 $c14 $c15"
     //% expandableArgumentMode="toggle"
 
     //% c00.shadow="colorNumberPicker"
