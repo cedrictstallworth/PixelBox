@@ -26,24 +26,9 @@ namespace PixelBox{
      * * Set pixel color by clicking on the pixel and selecting a color
      */
 
-    /**
-         * Draws an image on the LED screen.
-         * @param leds the pattern of LED to turn on/off
-         * @param interval time in milliseconds to pause after drawing
-         */
-    
-    /** 
-    * //% help=basic/show-leds
-    * //% weight=95 blockGap=8
-    * //% imageLiteral=1 async
-    * //% blockId=device_show_leds
-    * //% block="show leds" icon="\uf00a"
-    * //% parts="ledmatrix"
-    */
-
     //% blockId=PixelBox_setPixel
 
-    //% block ="$varname=variables_get(pic), $c00 $c01 $c02 $c03 $c04 $c05 $c06 $c07 \uf00a $c08 $c09 $c10 $c11 $c12 $c13 $c14 $c15"
+    //% block ="$c00 $c01 $c02 $c03 $c04 $c05 $c06 $c07 \uf00a $c08 $c09 $c10 $c11 $c12 $c13 $c14 $c15"
     //% inlineInputMode=inline
     
     //% c00.shadow="colorNumberPicker"
