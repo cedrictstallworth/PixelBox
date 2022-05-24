@@ -14,7 +14,7 @@ namespace PixelBox{
      * * Address LEDs with linear index
      */
     //% blockId=PixelBox_plotAt
-    //% block="plot at $index"
+    //% block="plot at $index"  icon="\uf00a"
     //% index.min=0 index.max=25
     export function plotAt(index: number): void {
         const y = Math.floor(index / 5);
@@ -28,7 +28,7 @@ namespace PixelBox{
 
     //% blockId=PixelBox_setPixel
 
-    //% block ="$c00 $c01 $c02 $c03 $c04 $c05 $c06 $c07 \uf00a $c08 $c09 $c10 $c11 $c12 $c13 $c14 $c15"
+    //% block ="$c00 $c01 $c02 $c03 $c04 $c05 $c06 $c07 $c08 $c09 $c10 $c11 $c12 $c13 $c14 $c15"
    
     
     //% c00.shadow="colorNumberPicker"
