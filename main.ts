@@ -14,7 +14,7 @@ namespace PixelBox{
      * * Address LEDs with linear index
      */
     //% blockId=PixelBox_plotAt
-    //% block="plot at $index"  icon="\uf00a"
+    //% block="plot at $index"
     //% index.min=0 index.max=25
     export function plotAt(index: number): void {
         const y = Math.floor(index / 5);
@@ -23,14 +23,13 @@ namespace PixelBox{
     }
 
     /**
-     * * Set pixel color by clicking on the pixel and selecting a color
+     * *Set pixel image by clicking on pixels and selecting colors
      */
 
-    //% blockId=PixelBox_setPixel
+    //% blockId=PixelBox_setPixelImage
 
-    //% block ="$c00 $c01 $c02 $c03 $c04 $c05 $c06 $c07 $c08 $c09 $c10 $c11 $c12 $c13 $c14 $c15"
+    //% block ="Set Pixel Image $c00 $c01 $c02 $c03 $c04 $c05 $c06 $c07 $c08 $c09 $c10 $c11 $c12 $c13 $c14 $c15"
    
-    
     //% c00.shadow="colorNumberPicker"
     //% c01.shadow="colorNumberPicker"
     //% c02.shadow="colorNumberPicker"
@@ -49,7 +48,7 @@ namespace PixelBox{
     //% c15.shadow="colorNumberPicker"
 
 
-    export function setPixel(varname: string,
+    export function setPixelImage(
          c00: number, c01: number, c02: number, c03: number, c04: number, c05: number, c06: number, c07: number,
          c08: number, c09: number, c10: number, c11: number, c12: number, c13: number, c14: number, c15: number)
          : void {
