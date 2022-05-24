@@ -33,12 +33,12 @@ namespace PixelBox{
          */
     
     /** 
-    //% help=basic/show-leds
-    //% weight=95 blockGap=8
-    //% imageLiteral=1 async
-    //% blockId=device_show_leds
-    //% block="show leds" icon="\uf00a"
-    //% parts="ledmatrix"
+    * //% help=basic/show-leds
+    * //% weight=95 blockGap=8
+    * //% imageLiteral=1 async
+    * //% blockId=device_show_leds
+    * //% block="show leds" icon="\uf00a"
+    * //% parts="ledmatrix"
     */
 
     //% blockId=PixelBox_setPixel
