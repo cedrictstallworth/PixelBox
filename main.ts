@@ -55,7 +55,7 @@ namespace PixelBox{
          c08: number, c09: number, c10: number, c11: number, c12: number, c13: number, c14: number, c15: number)
          : void {
         
-        
+        serial.writeNumber(c00);
 
     }
 }
