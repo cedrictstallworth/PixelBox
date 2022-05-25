@@ -29,7 +29,7 @@ namespace PixelBox{
     //% blockId=PixelBox_setPixelImage
 
     //% block ="set image row00 $c00 $c01 $c02 $c03 $c04 $c05 $c06 $c07"
-    //% expandableArgumentMode="enable"
+    //% inlineInputMode=inline
 
 
     //% c00.shadow="colorNumberPicker"
