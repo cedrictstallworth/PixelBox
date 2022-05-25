@@ -15,6 +15,7 @@ namespace Pixelbox{
     //% blockId=Pixelbox_setPixelboxImageRow00
     //% block ="set pixel image row00 $c00 $c01 $c02 $c03 $c04 $c05 $c06 $c07"
     //% inlineInputMode=inline
+    //% weight=00
 
     //% c00.shadow="colorNumberPicker"
     //% c01.shadow="colorNumberPicker"
@@ -45,6 +46,7 @@ namespace Pixelbox{
     //% blockId=Pixelbox_setPixelboxImageRow01
     //% block ="set pixel image row01 $c08 $c09 $c10 $c11 $c12 $c13 $c14 $c15"
     //% inlineInputMode=inline
+    //% weight=10
 
     //% c07.shadow="colorNumberPicker"
     //% c08.shadow="colorNumberPicker"
