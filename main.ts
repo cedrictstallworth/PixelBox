@@ -1,5 +1,5 @@
 //% color="#4B0082" icon="\u2592"
-//% groups = ['Image Rows', 'others']
+//% groups = ["Image Rows"]
 namespace PixelBox{
     /**
      * Define Variables
