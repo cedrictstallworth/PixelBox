@@ -1,5 +1,5 @@
 //% color="#4B0082" icon="\u2592" block="Pixelbox"
-namespace Pixelbox{
+namespace PixelBox{
     /**
      * Define Variables
      */
