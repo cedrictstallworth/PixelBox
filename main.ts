@@ -39,23 +39,15 @@ namespace PixelBox{
     //% c04.shadow="colorNumberPicker"
     //% c05.shadow="colorNumberPicker"
     //% c06.shadow="colorNumberPicker"
-    //% c07.shadow="colorNumberPicker"
-    //% c08.shadow="colorNumberPicker"
-    //% c09.shadow="colorNumberPicker"
-    //% c10.shadow="colorNumberPicker"
-    //% c11.shadow="colorNumberPicker"
-    //% c12.shadow="colorNumberPicker"
-    //% c13.shadow="colorNumberPicker"
-    //% c14.shadow="colorNumberPicker"
-    //% c15.shadow="colorNumberPicker"
+
 
 
     export function setPixelImage(
-         c00: number, c01: number, c02: number, c03: number, c04: number, c05: number, c06: number, c07: number,
-         c08: number, c09: number, c10: number, c11: number, c12: number, c13: number, c14: number, c15: number)
+         c00: number, c01: number, c02: number, c03: number, c04: number, c05: number, c06: number, c07: number)
          : void {
         
-        serial.writeNumber(c00);
+        pixelbox.setMatrixColor(0, 0, neopixel.colors(c00));
+        
 
     }
 }
