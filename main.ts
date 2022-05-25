@@ -4,11 +4,11 @@ namespace PixelBox{
      * Define Variables
      */
     
-    /* let pixelbox: neopixel.Strip = null;
+    
+    let pixelbox: neopixel.Strip = null;
     pixelbox = neopixel.create(DigitalPin.P0, 64, NeoPixelMode.RGB);
     pixelbox.setMatrixWidth(8);
     pixelbox.clear();
-    */
        
     /**
      * * Address LEDs with linear index
@@ -28,8 +28,9 @@ namespace PixelBox{
 
     //% blockId=PixelBox_setPixelImage
 
-    //% block ="set pixel image || $c00 $c01 $c02 $c03 $c04 $c05 $c06 $c07 $c08 $c09 $c10 $c11 $c12 $c13 $c14 $c15"
+    //% block ="set image row00 $c00 $c01 $c02 $c03 $c04 $c05 $c06 $c07"
     //% expandableArgumentMode="enable"
+
 
     //% c00.shadow="colorNumberPicker"
     //% c01.shadow="colorNumberPicker"
