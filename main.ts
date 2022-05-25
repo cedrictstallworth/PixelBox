@@ -1,4 +1,4 @@
-//% color="#4B0082" icon="\u2592"
+//% color="#4B0082" icon="\u2592" block="PixelBox Blocks"
 //% groups = ["Image Rows"]
 namespace PixelBox{
     /**
