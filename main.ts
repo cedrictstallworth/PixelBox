@@ -39,7 +39,7 @@ namespace PixelBox{
     //% c04.shadow="colorNumberPicker"
     //% c05.shadow="colorNumberPicker"
     //% c06.shadow="colorNumberPicker"
-
+    //% c07.shadow="colorNumberPicker"
 
 
     export function setPixelImage(
@@ -47,7 +47,14 @@ namespace PixelBox{
          : void {
         
         pixelbox.setMatrixColor(0, 0, neopixel.colors(c00));
-        
+        pixelbox.setMatrixColor(1, 0, neopixel.colors(c01));
+        pixelbox.setMatrixColor(2, 0, neopixel.colors(c02));
+        pixelbox.setMatrixColor(3, 0, neopixel.colors(c03));
+        pixelbox.setMatrixColor(4, 0, neopixel.colors(c04));
+        pixelbox.setMatrixColor(5, 0, neopixel.colors(c05));
+        pixelbox.setMatrixColor(6, 0, neopixel.colors(c06));
+        pixelbox.setMatrixColor(7, 0, neopixel.colors(c07));
+
         pixelbox.show()
 
     }
