@@ -70,14 +70,14 @@ namespace PixelBox{
     export function setPixelImageRow01(
         c08: number, c09: number, c10: number, c11: number, c12: number, c13: number, c14: number, c15: number)
         : void {
-        pixelbox.setMatrixColor(0, 0, neopixel.colors(c08));
+        pixelbox.setMatrixColor(0, 1, neopixel.colors(c08));
         pixelbox.setMatrixColor(1, 1, neopixel.colors(c09));
-        pixelbox.setMatrixColor(2, 2, neopixel.colors(c10));
-        pixelbox.setMatrixColor(3, 3, neopixel.colors(c11));
-        pixelbox.setMatrixColor(4, 4, neopixel.colors(c12));
-        pixelbox.setMatrixColor(5, 5, neopixel.colors(c13));
-        pixelbox.setMatrixColor(6, 6, neopixel.colors(c14));
-        pixelbox.setMatrixColor(7, 7, neopixel.colors(c15));
+        pixelbox.setMatrixColor(2, 1, neopixel.colors(c10));
+        pixelbox.setMatrixColor(3, 1, neopixel.colors(c11));
+        pixelbox.setMatrixColor(4, 1, neopixel.colors(c12));
+        pixelbox.setMatrixColor(5, 1, neopixel.colors(c13));
+        pixelbox.setMatrixColor(6, 1, neopixel.colors(c14));
+        pixelbox.setMatrixColor(7, 1, neopixel.colors(c15));
         pixelbox.show()
     }
 }
