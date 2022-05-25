@@ -6,7 +6,7 @@ namespace PixelBox{
     
     
     let pixelbox: neopixel.Strip = null;
-    pixelbox = neopixel.create(DigitalPin.P0, 64, NeoPixelMode.RGB);
+    pixelbox = neopixel.create(DigitalPin.P1, 64, NeoPixelMode.RGB);
     pixelbox.setMatrixWidth(8);
     pixelbox.clear();
        
