@@ -1,5 +1,5 @@
 //%color="#4B0082" icon="\u2592"
-//%groups = '["Image Rows"]'
+//%groups = '["Image Rows", "others"]'
 namespace PixelBox{
     /**
      * Define Variables
@@ -29,7 +29,7 @@ namespace PixelBox{
     //% blockId=PixelBox_setPixelImageRow00
     //% block ="set pixel image row00 $c00 $c01 $c02 $c03 $c04 $c05 $c06 $c07"
     //% inlineInputMode=inline
-    //%group="Image Rows"
+
     //% c00.shadow="colorNumberPicker"
     //% c01.shadow="colorNumberPicker"
     //% c02.shadow="colorNumberPicker"
@@ -59,7 +59,7 @@ namespace PixelBox{
     //% blockId=PixelBox_setPixelImageRow01
     //% block ="set pixel image row01 $c08 $c09 $c10 $c11 $c12 $c13 $c14 $c15"
     //% inlineInputMode=inline
-    //%group="Image Rows"
+
     //% c07.shadow="colorNumberPicker"
     //% c08.shadow="colorNumberPicker"
     //% c09.shadow="colorNumberPicker"
