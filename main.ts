@@ -48,6 +48,7 @@ namespace PixelBox{
         
         pixelbox.setMatrixColor(0, 0, neopixel.colors(c00));
         
+        pixelbox.show()
 
     }
 }
