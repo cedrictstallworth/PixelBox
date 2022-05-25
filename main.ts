@@ -32,7 +32,16 @@ namespace PixelBox{
         for (let column = 0; column <= 7; column++) {
             pixelbox.setMatrixColor(column, row, neopixel.colors(colors[column]));
         }
+    }
 
-        pixelbox.show();
+/**
+     * *Set pixel image ROWXX by clicking on pixels and selecting colors
+     */
+//% blockId=Pixelbox_showPixelBoxImage
+//% block ="show pixelbox image"
+
+export function showPixelBoxImage()
+    : void {
+    pixelbox.show();
     }
 }
