@@ -9,7 +9,7 @@ namespace Pixelbox{
     pixelbox.clear();
  
 
-    /**
+    /*************************************************************************************************
      * *Set pixel image ROW00 by clicking on pixels and selecting colors
      */
     //% blockId=Pixelbox_setPixelboxImageRow00
@@ -40,7 +40,8 @@ namespace Pixelbox{
         pixelbox.show()
     }
 
-    /**
+    /*************************************************************************************************
+     * 
      * *Set pixel image ROW01 by clicking on pixels and selecting colors
      */
     //% blockId=Pixelbox_setPixelboxImageRow01
@@ -69,6 +70,38 @@ namespace Pixelbox{
         pixelbox.setMatrixColor(5, 1, neopixel.colors(c13));
         pixelbox.setMatrixColor(6, 1, neopixel.colors(c14));
         pixelbox.setMatrixColor(7, 1, neopixel.colors(c15));
+        pixelbox.show()
+    }
+
+    /*************************************************************************************************
+     * 
+     * *Set pixel image ROW02 by clicking on pixels and selecting colors
+     */
+    //% blockId=Pixelbox_setPixelboxImageRow02
+    //% block ="set pixel image row02 $c16 $c17 $c18 $c19 $c20 $c21 $c22 $c23"
+    //% inlineInputMode=inline
+    //% weight=60
+
+    //% c16.shadow="colorNumberPicker"
+    //% c17.shadow="colorNumberPicker"
+    //% c18.shadow="colorNumberPicker"
+    //% c19.shadow="colorNumberPicker"
+    //% c20.shadow="colorNumberPicker"
+    //% c21.shadow="colorNumberPicker"
+    //% c22.shadow="colorNumberPicker"
+    //% c23.shadow="colorNumberPicker"
+
+    export function setPixelboxImageRow02(
+        c16: number, c17: number, c18: number, c19: number, c20: number, c21: number, c22: number, c23: number)
+        : void {
+        pixelbox.setMatrixColor(0, 2, neopixel.colors(c16));
+        pixelbox.setMatrixColor(1, 2, neopixel.colors(c17));
+        pixelbox.setMatrixColor(2, 2, neopixel.colors(c18));
+        pixelbox.setMatrixColor(3, 2, neopixel.colors(c19));
+        pixelbox.setMatrixColor(4, 2, neopixel.colors(c20));
+        pixelbox.setMatrixColor(5, 2, neopixel.colors(c21));
+        pixelbox.setMatrixColor(6, 2, neopixel.colors(c22));
+        pixelbox.setMatrixColor(7, 2, neopixel.colors(c23));
         pixelbox.show()
     }
 }
