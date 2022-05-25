@@ -26,9 +26,9 @@ namespace PixelBox{
      * *Set pixel image by clicking on pixels and selecting colors
      */
 
-    //% blockId=PixelBox_setPixelImage
+    //% blockId=PixelBox_setPixelImageRow00
 
-    //% block ="set image row00 $c00 $c01 $c02 $c03 $c04 $c05 $c06 $c07"
+    //% block ="set pixel image row00 $c00 $c01 $c02 $c03 $c04 $c05 $c06 $c07"
     //% inlineInputMode=inline
 
 
@@ -42,7 +42,7 @@ namespace PixelBox{
     //% c07.shadow="colorNumberPicker"
 
 
-    export function setPixelImage(
+    export function setPixelImageRow00(
          c00: number, c01: number, c02: number, c03: number, c04: number, c05: number, c06: number, c07: number)
          : void {
         
