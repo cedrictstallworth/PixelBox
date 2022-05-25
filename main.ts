@@ -37,7 +37,12 @@ namespace Pixelbox{
 
     /**TEST FOR A BETTER WAY *************************************************************************
          * *Show Pixelbox Image
-         */
+        */
+    //% blockId=Pixelbox_showPixelboxImage
+    //% block ="show Pixelbox image"
+    //% inlineInputMode=inline
+    //% weight=30
+
 
 
 }
