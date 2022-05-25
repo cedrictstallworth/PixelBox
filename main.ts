@@ -41,7 +41,6 @@ namespace Pixelbox{
     //% blockId=Pixelbox_sshowPixelboxImage
     //% block ="show Pixelbox image"
     //% inlineInputMode=inline
-    //% row.min=0 row.max=7
     //% weight=30
 
     export function showPixelboxImage()
