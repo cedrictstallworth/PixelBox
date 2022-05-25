@@ -1,32 +1,18 @@
 //% color="#4B0082" icon="\u2592" block="Pixelbox"
-//% groups = '["Image Rows"]'
-namespace PixelBox{
+namespace Pixelbox{
     /**
      * Define Variables
      */
-    
-    
     let pixelbox: neopixel.Strip = null;
     pixelbox = neopixel.create(DigitalPin.P1, 64, NeoPixelMode.RGB);
     pixelbox.setMatrixWidth(8);
     pixelbox.clear();
-       
-    /**
-     * * Address LEDs with linear index
-     */
-    //% blockId=PixelBox_plotAt
-    //% block="plot at $index"
-    //% index.min=0 index.max=25
-    export function plotAt(index: number): void {
-        const y = Math.floor(index / 5);
-        const x = index % 5;
-        led.plot(x,y);
-    }
+ 
 
     /**
      * *Set pixel image ROW00 by clicking on pixels and selecting colors
      */
-    //% blockId=PixelBox_setPixelImageRow00
+    //% blockId=Pixelbox_setPixelboxImageRow00
     //% block ="set pixel image row00 $c00 $c01 $c02 $c03 $c04 $c05 $c06 $c07"
     //% inlineInputMode=inline
 
@@ -39,7 +25,7 @@ namespace PixelBox{
     //% c06.shadow="colorNumberPicker"
     //% c07.shadow="colorNumberPicker"
 
-    export function setPixelImageRow00(
+    export function setPixelboxImageRow00(
          c00: number, c01: number, c02: number, c03: number, c04: number, c05: number, c06: number, c07: number)
          : void {
         pixelbox.setMatrixColor(0, 0, neopixel.colors(c00));
@@ -56,7 +42,7 @@ namespace PixelBox{
     /**
      * *Set pixel image ROW01 by clicking on pixels and selecting colors
      */
-    //% blockId=PixelBox_setPixelImageRow01
+    //% blockId=Pixelbox_setPixelboxImageRow01
     //% block ="set pixel image row01 $c08 $c09 $c10 $c11 $c12 $c13 $c14 $c15"
     //% inlineInputMode=inline
 
@@ -70,7 +56,7 @@ namespace PixelBox{
     //% c14.shadow="colorNumberPicker"
     //% c15.shadow="colorNumberPicker"
 
-    export function setPixelImageRow01(
+    export function setPixelboxImageRow01(
         c08: number, c09: number, c10: number, c11: number, c12: number, c13: number, c14: number, c15: number)
         : void {
         pixelbox.setMatrixColor(0, 1, neopixel.colors(c08));
