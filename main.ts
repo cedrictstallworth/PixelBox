@@ -1,3 +1,10 @@
+
+enum imageList{
+    image01 = "image01",
+    image02 = "image02"
+}
+
+
 //% color="#4B0082" icon="\u2592" block="Pixelbox"
 namespace PixelBox{
 
@@ -18,8 +25,8 @@ namespace PixelBox{
         }
     }
 
-    let image01 = new PixelBoxImage("C");
-    let image02 = new PixelBoxImage("D");
+    let image01 = new PixelBoxImage("image01");
+    let image02 = new PixelBoxImage("image02");
  
     /**
     *Set Pixelbox image row(0-7) by clicking on pixels to select colors
@@ -38,7 +45,7 @@ namespace PixelBox{
     //% c06.shadow="colorNumberPicker"
     //% c07.shadow="colorNumberPicker"
 
-    export function setPixelboxColorsForCol(name: string, row: number,
+    export function setPixelboxColorsForCol(name: imageList, row: number,
         c00: number, c01: number, c02: number, c03: number, c04: number, c05: number, c06: number, c07: number): void {
   
         let colors = [c00, c01, c02, c03, c04, c05, c06, c07];
