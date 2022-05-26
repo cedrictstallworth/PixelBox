@@ -18,13 +18,13 @@ namespace PixelBox{
         }
     }
 
-    let image01 = new PixelBoxImage("xx01");
-    let image02 = new PixelBoxImage("xx02");
+    let image01 = new PixelBoxImage("C");
+    let image02 = new PixelBoxImage("D");
 
     /**
          * *Set pixel image ROWXX by clicking on pixels and selecting colors
          */
-    // % blockId=Pixelbox_setPixelboxColorsForRow
+    //% blockId=Pixelbox_setPixelboxColorsForRow
     //% block ="set image $name colors for row $row, $c00 $c01 $c02 $c03 $c04 $c05 $c06 $c07"
     //% inlineInputMode=inline
     //% row.min=0 row.max=7
@@ -58,7 +58,7 @@ namespace PixelBox{
     /**
          * *Set pixel image ROWXX by clicking on pixels and selecting colors
          */
-    // % blockId=Pixelbox_showPixelBoxImage
+    //% blockId=Pixelbox_showPixelBoxImage
     //% block ="show pixelbox image $name"
 
     export function showPixelBoxImage(name: string): void {
