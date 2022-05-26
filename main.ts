@@ -59,9 +59,9 @@ namespace PixelBox{
     /**
     *Set pixel image ROWXX by clicking on pixels and selecting colors
     */
- /*
+
     //% blockId=Pixelbox_showPixelBoxImage
-    //% block ="show pixelbox image $name"
+    //% block="show pixelbox image $name"
 
     export function showPixelBoxImage(name: string): void {
         switch(name){
@@ -73,6 +73,5 @@ namespace PixelBox{
                 break;
         }
     }
-*/
 
 }
