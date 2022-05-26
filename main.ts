@@ -11,7 +11,11 @@ namespace PixelBox{
             this.pixel.setMatrixWidth(8);
             this.pixel.clear();
         }
+
+
     }
+
+    let image01 = new PixelBoxImage("image01");
 
     /**
      * Declare an Image
@@ -27,7 +31,7 @@ namespace PixelBox{
          * *Set pixel image ROWXX by clicking on pixels and selecting colors
          */
     //% blockId=Pixelbox_setPixelboxColorsForRow
-    //% block ="set image $image colors for row $row, $c00 $c01 $c02 $c03 $c04 $c05 $c06 $c07"
+    //% block ="set image $name colors for row $row, $c00 $c01 $c02 $c03 $c04 $c05 $c06 $c07"
     //% inlineInputMode=inline
     //% row.min=0 row.max=7
 
@@ -40,12 +44,12 @@ namespace PixelBox{
     //% c06.shadow="colorNumberPicker"
     //% c07.shadow="colorNumberPicker"
 
-    export function setPixelboxColorsForRow(image: PixelBoxImage, row: number,
+    export function setPixelboxColorsForRow(name: string, row: number,
         c00: number, c01: number, c02: number, c03: number, c04: number, c05: number, c06: number, c07: number)
         : void {
         let colors = [c00, c01, c02, c03, c04, c05, c06, c07];
         for (let column = 0; column <= 7; column++) {
-            image.pixel.setMatrixColor(column, row, neopixel.colors(colors[column]));
+            image01.pixel.setMatrixColor(column, row, neopixel.colors(colors[column]));
         }
     }
 
@@ -56,7 +60,7 @@ namespace PixelBox{
     //% block ="show pixelbox image $image"
 
     export function showPixelBoxImage(image: PixelBoxImage): void {
-        image.pixel.show();
+        image01.pixel.show();
     }
 
 
