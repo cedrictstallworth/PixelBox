@@ -4,7 +4,6 @@ namespace PixelBox{
     class PixelBoxImage {
         name: string;
         pixel: neopixel.Strip;
-        //% block="create an image $thisName"
         constructor(thisName: string) {
             this.name = thisName;
             this.pixel = neopixel.create(DigitalPin.P1, 64, NeoPixelMode.RGB);
