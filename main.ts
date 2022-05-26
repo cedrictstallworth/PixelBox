@@ -27,7 +27,7 @@ namespace PixelBox{
     //% blockId=Pixelbox_setPixelboxColorsForRow
     //% block ="set image $name colors for row $row, $c00 $c01 $c02 $c03 $c04 $c05 $c06 $c07"
     //% inlineInputMode=inline
-    // % row.min=0 row.max=7
+    //% row.min=0 row.max=7
     
     //% c00.shadow="colorNumberPicker"
     //% c01.shadow="colorNumberPicker"
