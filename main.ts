@@ -1,11 +1,15 @@
 //% color="#4B0082" icon="\u2592" block="Pixelbox"
 namespace PixelBox{
     /**
-     * Define Variables
+     * Declare an Image
      */
-    let pixelbox: neopixel.Strip = null;
-    pixelbox = neopixel.create(DigitalPin.P1, 64, NeoPixelMode.RGB);
-    pixelbox.setMatrixWidth(8);
+    //% blockId=Pixelbox_declareAnImage
+    //% block ="set image name to $name, $numPixels total pixels, $width pixels wide, set on pin $pin"
+    //% inlineInputMode=inline
+    export function declareAnImage(name: string, numPixels: number, width: number, pin: DigitalPin)
+        let pixelbox: neopixel.Strip = null;
+        pixelbox = neopixel.create(DigitalPin.P1, 64, NeoPixelMode.RGB);
+        pixelbox.setMatrixWidth(8);
     pixelbox.clear();
 
     /**
@@ -44,4 +48,8 @@ export function showPixelBoxImage()
     : void {
     pixelbox.show();
     }
+
+
+
+
 }
