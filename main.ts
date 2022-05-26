@@ -1,6 +1,12 @@
 //% color="#4B0082" icon="\u2592" block="Pixelbox"
 namespace PixelBox{
-    
+
+
+    /**
+    * Declare an Image
+    */
+    //% blockId=Pixelbox_declareAnImage
+    //% block="create an image $thisName"
     class PixelBoxImage {
         name: string;
         pixel: neopixel.Strip;
