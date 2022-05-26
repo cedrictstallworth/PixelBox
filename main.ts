@@ -17,9 +17,9 @@ namespace PixelBox{
      * Declare an Image
      */
     //% blockId=Pixelbox_declareAnImage
-    // % block ="set image name to $name"
+    //% block ="set image name to $name"
     export function declareAnImage(name: string) :void{
-        new PixelBoxImage(name).name
+        new PixelBoxImage(name).name;
     }
 
 
