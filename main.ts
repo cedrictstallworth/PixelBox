@@ -21,7 +21,7 @@ namespace PixelBox{
     let image01 = new PixelBoxImage("C");
     let image02 = new PixelBoxImage("D");
  
-    /*
+    /**
     Set Pixelbox image row(0-7) by clicking on pixels to select colors
     */ 
     //% blockId=Pixelbox_setPixelboxColorsForRow
