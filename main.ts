@@ -5,6 +5,7 @@ namespace PixelBox{
     /**
     * Declare an Image
     */
+    /*
     //% blockId=Pixelbox_declareAnImage
     //% block="create an image $thisName"
     class PixelBoxImage {
@@ -20,10 +21,12 @@ namespace PixelBox{
 
     let image01 = new PixelBoxImage("C");
     let image02 = new PixelBoxImage("D");
+    */
 
     /**
          * *Set pixel image ROWXX by clicking on pixels and selecting colors
          */
+    /*    
     //% blockId=Pixelbox_setPixelboxColorsForRow
     //% block ="set image $name colors for row $row, $c00 $c01 $c02 $c03 $c04 $c05 $c06 $c07"
     //% inlineInputMode=inline
@@ -54,10 +57,12 @@ namespace PixelBox{
             }
         }
     }
+*/
 
     /**
          * *Set pixel image ROWXX by clicking on pixels and selecting colors
          */
+ /*
     //% blockId=Pixelbox_showPixelBoxImage
     //% block ="show pixelbox image $name"
 
@@ -71,4 +76,6 @@ namespace PixelBox{
                 break;
         }
     }
+*/
+
 }
