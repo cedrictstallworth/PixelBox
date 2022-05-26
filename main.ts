@@ -23,8 +23,7 @@ namespace PixelBox{
  
     /**
          * *Set pixel image ROWXX by clicking on pixels and selecting colors
-         */
-    /*    
+         */ 
     //% blockId=Pixelbox_setPixelboxColorsForRow
     //% block ="set image $name colors for row $row, $c00 $c01 $c02 $c03 $c04 $c05 $c06 $c07"
     //% inlineInputMode=inline
@@ -55,7 +54,6 @@ namespace PixelBox{
             }
         }
     }
-*/
 
     /**
          * *Set pixel image ROWXX by clicking on pixels and selecting colors
