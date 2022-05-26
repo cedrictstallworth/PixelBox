@@ -47,8 +47,10 @@ namespace PixelBox{
             switch (name) {
                 case image01.name:
                     image01.pixel.setMatrixColor(column, row, neopixel.colors(colors[column]));
+                    break;
                 case image02.name: let thisImage = image02.pixel;
                     image01.pixel.setMatrixColor(column, row, neopixel.colors(colors[column]));
+                    break;
             }
         }
     }
@@ -63,8 +65,10 @@ namespace PixelBox{
         switch(name){
             case image01.name:
                 image01.pixel.show();
+                break;
             case image02.name:
                 image02.pixel.show();
+                break;
         }
     }
 
