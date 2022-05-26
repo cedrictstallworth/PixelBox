@@ -1,16 +1,27 @@
 //% color="#4B0082" icon="\u2592" block="Pixelbox"
 namespace PixelBox{
+    
+    class PixelBoxImage {
+        name: string;
+        pixel: neopixel.Strip;
+        //% block="create an image $thisName"
+        constructor(thisName: string) {
+            this.name = thisName;
+            this.pixel = neopixel.create(DigitalPin.P1, 64, NeoPixelMode.RGB);
+            this.pixel.setMatrixWidth(8);
+            this.pixel.clear();
+        }
+    }
+
     /**
      * Declare an Image
      */
     //% blockId=Pixelbox_declareAnImage
-    //% block ="set image name to $name, $numPixels total pixels, $width pixels wide, set on pin $pin"
-    //% inlineInputMode=inline
-    export function declareAnImage(name: string, numPixels: number, width: number, pin: DigitalPin)
-        let pixelbox: neopixel.Strip = null;
-        pixelbox = neopixel.create(DigitalPin.P1, 64, NeoPixelMode.RGB);
-        pixelbox.setMatrixWidth(8);
-    pixelbox.clear();
+    // % block ="set image name to $name"
+    export function declareAnImage(name: string) :void{
+        new PixelBoxImage(name).name
+    }
+
 
     /**
          * *Set pixel image ROWXX by clicking on pixels and selecting colors
@@ -38,15 +49,14 @@ namespace PixelBox{
         }
     }
 
-/**
-     * *Set pixel image ROWXX by clicking on pixels and selecting colors
-     */
-//% blockId=Pixelbox_showPixelBoxImage
-//% block ="show pixelbox image"
+    /**
+         * *Set pixel image ROWXX by clicking on pixels and selecting colors
+         */
+    //% blockId=Pixelbox_showPixelBoxImage
+    //% block ="show pixelbox image"
 
-export function showPixelBoxImage()
-    : void {
-    pixelbox.show();
+    export function showPixelBoxImage(): void {
+        pixelbox.show();
     }
 
 
