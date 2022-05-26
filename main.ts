@@ -38,7 +38,7 @@ namespace PixelBox{
     //% c06.shadow="colorNumberPicker"
     //% c07.shadow="colorNumberPicker"
 
-    export function setPixelboxColorsForRow(name: string, row: number,
+    export function setPixelboxColorsForCol(name: string, row: number,
         c00: number, c01: number, c02: number, c03: number, c04: number, c05: number, c06: number, c07: number): void {
   
         let colors = [c00, c01, c02, c03, c04, c05, c06, c07];
