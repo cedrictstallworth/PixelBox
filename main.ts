@@ -1,5 +1,4 @@
 
-//% color="#FFFFFF"
 enum imageList{
     image01 = "image01",
     image02 = "image02"
@@ -33,6 +32,7 @@ namespace PixelBox{
     *Set Pixelbox image row(0-7) by clicking on pixels to select colors
     */
     //% blockId=Pixelbox_setPixelboxColorsForRow
+    //% colorSecondary="#FFFFFF"
     //% block="set image $name colors for row $row, $c00 $c01 $c02 $c03 $c04 $c05 $c06 $c07"
     //% inlineInputMode=inline
     //% row.min=0 row.max=7
