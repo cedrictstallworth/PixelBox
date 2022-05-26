@@ -1,4 +1,5 @@
 
+//% color="#FFFFFF"
 enum imageList{
     image01 = "image01",
     image02 = "image02"
