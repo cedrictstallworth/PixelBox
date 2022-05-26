@@ -11,21 +11,10 @@ namespace PixelBox{
             this.pixel.setMatrixWidth(8);
             this.pixel.clear();
         }
-
-
     }
 
-    let image01 = new PixelBoxImage("image01");
-
-    /**
-     * Declare an Image
-     */
-    //% blockId=Pixelbox_declareAnImage
-    //% block ="set image name to $name"
-    export function declareAnImage(name: string) :void{
-        new PixelBoxImage(name).name;
-    }
-
+    let image01 = new PixelBoxImage("xx01");
+    let image02 = new PixelBoxImage("xx02");
 
     /**
          * *Set pixel image ROWXX by clicking on pixels and selecting colors
@@ -45,11 +34,17 @@ namespace PixelBox{
     //% c07.shadow="colorNumberPicker"
 
     export function setPixelboxColorsForRow(name: string, row: number,
-        c00: number, c01: number, c02: number, c03: number, c04: number, c05: number, c06: number, c07: number)
-        : void {
+        c00: number, c01: number, c02: number, c03: number, c04: number, c05: number, c06: number, c07: number): void {
+  
         let colors = [c00, c01, c02, c03, c04, c05, c06, c07];
+
         for (let column = 0; column <= 7; column++) {
-            image01.pixel.setMatrixColor(column, row, neopixel.colors(colors[column]));
+            switch (name) {
+                case image01.name:
+                    image01.pixel.setMatrixColor(column, row, neopixel.colors(colors[column]));
+                case image02.name: let thisImage = image02.pixel;
+                    image01.pixel.setMatrixColor(column, row, neopixel.colors(colors[column]));
+            }
         }
     }
 
@@ -57,10 +52,15 @@ namespace PixelBox{
          * *Set pixel image ROWXX by clicking on pixels and selecting colors
          */
     //% blockId=Pixelbox_showPixelBoxImage
-    //% block ="show pixelbox image $image"
+    //% block ="show pixelbox image $name"
 
-    export function showPixelBoxImage(image: PixelBoxImage): void {
-        image01.pixel.show();
+    export function showPixelBoxImage(name: string): void {
+        switch(name){
+            case image01.name:
+                image01.pixel.show();
+            case image02.name:
+                image02.pixel.show();
+        }
     }
 
 
