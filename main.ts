@@ -5,8 +5,7 @@ namespace PixelBox{
     /**
     * Declare an Image
     */
-    /*
-    //% blockId=Pixelbox_declareAnImage
+     //% blockId=Pixelbox_declareAnImage
     //% block="create an image $thisName"
     class PixelBoxImage {
         name: string;
@@ -21,8 +20,7 @@ namespace PixelBox{
 
     let image01 = new PixelBoxImage("C");
     let image02 = new PixelBoxImage("D");
-    */
-
+ 
     /**
          * *Set pixel image ROWXX by clicking on pixels and selecting colors
          */
