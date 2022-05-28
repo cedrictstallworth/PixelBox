@@ -28,9 +28,26 @@ namespace PixelBox{
     let image02 = new PixelBoxImage(2);
 
     let gig = 42;
-    console.log(gig)
+    console.log(image01.num)
 
- 
+    /**
+    * Show varibale value in console.log
+    */
+
+    //% block="showme $x"
+    export function showme(x: any) {
+        console.log(x)
+    }
+
+    /**
+    * This API will have a variable shadow block with the
+    * name "someName" pre-filled
+    */
+
+    //% block="$x=variables_get(someName)"
+    export function foo(x: number) {
+
+    }
   
     /**
     *Set Pixelbox image row(0-7) by clicking on pixels to select colors
