@@ -26,7 +26,12 @@ namespace PixelBox{
 
     let image01 = new PixelBoxImage(1);
     let image02 = new PixelBoxImage(2);
+
+    let gig = 42;
+    console.log(gig)
+
  
+  
     /**
     *Set Pixelbox image row(0-7) by clicking on pixels to select colors
     */
