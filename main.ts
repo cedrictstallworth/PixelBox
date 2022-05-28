@@ -5,23 +5,24 @@ enum imageList{
 }
 
 enum Gest {
-    //% block="shake"
-    Shake,
-    //% block="tilt up"
-    TiltUp,
-    //% block="tilt down"
-    TiltDown,
-    //% block="tilt left"
-    TiltLeft,
-    //% block="tilt right"
-    TiltRight,
-    //% block="face up"
-    FaceUp,
-    //% block="face down"
-    FaceDown,
-    //% block="free fall"
-    FreeFall
-
+    //% block="red"
+    red,
+    //% block="green"
+    green,
+    //% block="blue"
+    blue,
+    //% block="cyan"
+    cyan,
+    //% block="magenta"
+    magenta,
+    //% block="yellow"
+    yellow,
+    //% block="white"
+    white,
+    //% block="gray"
+    gray,
+    //% block="black"
+    black
 }
 
 //% color="#4B0082" icon="\u2592" block="Pixelbox"
