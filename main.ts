@@ -4,6 +4,26 @@ enum imageList{
     image02 = 2
 }
 
+enum Gest {
+    //% block="shake"
+    Shake,
+    //% block="tilt up"
+    TiltUp,
+    //% block="tilt down"
+    TiltDown,
+    //% block="tilt left"
+    TiltLeft,
+    //% block="tilt right"
+    TiltRight,
+    //% block="face up"
+    FaceUp,
+    //% block="face down"
+    FaceDown,
+    //% block="free fall"
+    FreeFall
+
+}
+
 //% color="#4B0082" icon="\u2592" block="Pixelbox"
 namespace PixelBox{
 
@@ -27,9 +47,6 @@ namespace PixelBox{
     let image01 = new PixelBoxImage(1);
     let image02 = new PixelBoxImage(2);
 
-    let gig = 42;
-    console.log(image01.num)
-
     /**
     * Show varibale value in console.log
     */
@@ -44,11 +61,25 @@ namespace PixelBox{
     * name "someName" pre-filled
     */
 
-    //% block="$x=variables_get(someName)"
-    export function foo(x: number) {
+    //% block="image name = $x=variables_get(someName)"
+    export function foo(x: PixelBoxImage) {
 
     }
   
+    //% block
+    //% gip.fieldEditor="gridpicker"
+    //% gip.fieldOptions.width=220
+    //% gip.fieldOptions.columns=3
+    export function onGip(gip: Gest) {
+
+    }
+
+
+
+
+
+
+
     /**
     *Set Pixelbox image row(0-7) by clicking on pixels to select colors
     */
