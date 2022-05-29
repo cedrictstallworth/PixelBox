@@ -37,12 +37,6 @@ enum Colors {
     Black = 0x000000
 }
 
-const test = [Colors.Black, Colors.Black ];
-console.log("Hello again");
-console.log(test[0]);
-test[0] = Colors.Royal;
-console.log(test[0]);
-
 //% color="#4B0082" colorSecondary="#FFFF00" icon="\u2592" block="Pixelbox"
 namespace PixelBox{
 
@@ -57,12 +51,29 @@ namespace PixelBox{
     export class PixelBoxImage {
         name: string;
         pixel: neopixel.Strip;
+        image: Colors[];
         constructor(thisName: string) {
             this.name = thisName;
             this.pixel = neopixel.create(DigitalPin.P1, 64, NeoPixelMode.RGB);
             this.pixel.setMatrixWidth(8);
             this.pixel.clear();
+
+            for (let i = 0; i <= 64; i++) {
+                this.image[i] = Colors.Black;
+            }
         }
+
+        setColor(row:number, col:number, color:Colors){
+            let index = (row % 8) + (col * 8);
+            this.image[index] = color;
+        }
+
+        getColor(row:number, col:number) :Colors{
+            let index = (row % 8) + (col * 8);
+            return this.image[index];
+        }
+
+
     }
     //==== END - DEFINE IMAGE =======================================================
 
@@ -107,6 +118,7 @@ namespace PixelBox{
         for (let column = 0; column <= 7; column++) {
             img.pixel.setMatrixColor(column, row, neopixel.colors(colors[column]));
         }
+        
     }
     //==== END - SET IMAGE ROW COLORS ==============================================================
 
