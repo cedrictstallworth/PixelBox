@@ -34,8 +34,8 @@ namespace PixelBox{
     //*************************************************************************
     * Define an Image
     */
-     //% blockId=Pixelbox_declareAnImage
-    //% block="create an image $thisName"
+    // % blockId=Pixelbox_declareAnImage
+    // % block="create an image $thisName"
 
     export class PixelBoxImage {
         name: string;
@@ -57,7 +57,8 @@ namespace PixelBox{
     * Create an Image
     */
     //% blockId=Pixelbox_declareAnImage
-    //% block="create an image $thisName=variables_get(imageName)"
+    // % block="create an image $thisName=variables_get(imageName)"
+    //% block="create an image $thisName"
     export function createImage(thisName: string) :PixelBoxImage {
         let x = new PixelBoxImage(thisName);
         return x;
@@ -89,14 +90,6 @@ namespace PixelBox{
         let colors = [c00, c01, c02, c03, c04, c05, c06, c07];
 
         for (let column = 0; column <= 7; column++) {
-            /*switch (num) {
-                case image01.num:
-                    image01.pixel.setMatrixColor(column, row, neopixel.colors(colors[column]));
-                    break;
-                case image02.num:
-                    image02.pixel.setMatrixColor(column, row, neopixel.colors(colors[column]));
-                    break;
-            }*/
             img.pixel.setMatrixColor(column, row, neopixel.colors(colors[column]));
         }
     }
@@ -112,14 +105,6 @@ namespace PixelBox{
     //% block="show image $img=variables_get(imageName)"
 
     export function showPixelBoxImage(img: PixelBoxImage): void {
-        /*switch(num){
-            case image01.num:
-                image01.pixel.show();
-                break;
-            case image02.num:
-                image02.pixel.show();
-                break;
-        }*/
         img.pixel.show();
     }
     //==== END - SHOW IMAGE =============================================================
