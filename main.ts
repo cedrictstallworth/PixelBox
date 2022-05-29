@@ -1,30 +1,47 @@
 
-enum imageList{
-    image01 = 1,
-    image02 = 2
+enum Colors {
+    //% block=red
+    Red = 0xFF0000,
+    //% block=orange
+    Orange = 0xFFA500,
+    //% block=yellow
+    Yellow = 0xFFFF00,
+    //$ block=pink
+    Pink = 0xFF9da5,
+
+    //% block=green
+    Green = 0x00FF00,
+    //% block=lavender
+    Lavender = 0xB09EFF,
+    //% block=cyan
+    Cyan = 0x00FFFF,
+    //% block=royal
+    Royal = 0x007FFF,
+
+    //% block=brown
+    Brown = 0x65471F,
+    //% block=blue
+    Blue = 0x0000FF,
+    //% block=purple
+    Purple = 0x7F00FF,
+    //% block=fuchsia
+    Fuchsia = 0xFF0080,
+
+    //% block=magenta
+    Magenta = 0x00FF00,
+    //% block=white
+    White = 0xFFFFFF,
+    //% block=gray
+    Gray = 0x999999,
+    //% block=black
+    Black = 0x000000
 }
 
-enum Gest {
-    //% block="red"
-    //% jres=gestures.tiltleft
-    red,
-    //% block="green"
-    green,
-    //% block="blue"
-    blue,
-    //% block="cyan"
-    cyan,
-    //% block="magenta"
-    magenta,
-    //% block="yellow"
-    yellow,
-    //% block="white"
-    white,
-    //% block="gray"
-    gray,
-    //% block="black"
-    black
-}
+const test = [Colors.Black, Colors.Black ];
+console.log("Hello again");
+console.log(test[0]);
+test[0] = Colors.Royal;
+console.log(test[0]);
 
 //% color="#4B0082" colorSecondary="#FFFF00" icon="\u2592" block="Pixelbox"
 namespace PixelBox{
@@ -40,7 +57,6 @@ namespace PixelBox{
     export class PixelBoxImage {
         name: string;
         pixel: neopixel.Strip;
-        tag: string;
         constructor(thisName: string) {
             this.name = thisName;
             this.pixel = neopixel.create(DigitalPin.P1, 64, NeoPixelMode.RGB);
@@ -57,7 +73,6 @@ namespace PixelBox{
     * Create an Image
     */
     //% blockId=Pixelbox_declareAnImage
-    // % block="create an image $thisName=variables_get(imageName)"
     //% block="create an image $thisName"
     export function createImage(thisName: string) :PixelBoxImage {
         let x = new PixelBoxImage(thisName);
