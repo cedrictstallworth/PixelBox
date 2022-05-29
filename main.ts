@@ -51,7 +51,7 @@ namespace PixelBox{
     export class PixelBoxImage {
         name: string;
         pixel: neopixel.Strip;
-        image: Colors[];
+        image: Colors[]=[]; //Array<Colors>;
 
         constructor(thisName: string) {
             this.name = thisName;
@@ -63,23 +63,19 @@ namespace PixelBox{
 
         initializeImage(color: Colors) {
             for (let i = 0; i <= 63; i++) {
-                console.log(i);
-                this.image[i] = Colors.Black;
-                //console.log(this.image[5]);
+                this.image[i] = color;
             }
         }
 
-        
-
-        /*setColor(row:number, col:number, color:Colors){
+        setColor(row:number, col:number, color:Colors){
             let index = (row % 8) + (col * 8);
             this.image[index] = color;
-        }*/
+        }
 
-        /*getColor(row:number, col:number) :Colors{
+        getColor(row:number, col:number) :Colors{
             let index = (row % 8) + (col * 8);
             return this.image[index];
-        }*/
+        }
 
 
     }
@@ -95,7 +91,6 @@ namespace PixelBox{
     //% block="create an image $thisName"
     export function createImage(thisName: string) :PixelBoxImage {
         let x = new PixelBoxImage(thisName);
-        console.log(x.name);
         return x;
     }
     //==== END - CREATE IMAGE ============================================================
@@ -122,18 +117,38 @@ namespace PixelBox{
     export function setPixelboxColorsForCol(img: PixelBoxImage, row: number,
         c00: number, c01: number, c02: number, c03: number, c04: number, c05: number, c06: number, c07: number): void {
   
-        let colors = [c00, c01, c02, c03, c04, c05, c06, c07];
-
-
-        
+        let rowColors = [c00, c01, c02, c03, c04, c05, c06, c07];
+        for (let col = 0; col <=7; col++) {
+            img.setColor(row, col, rowColors[col]);
+        }     
     }
     //==== END - SET IMAGE ROW COLORS ==============================================================
 
 
     /************************************************************************
+    /**** CLEAR IMAGE ***********************************************************
+    //************************************************************************
+    *Set all pixels to the background color
+    */
+    //% blockId=Pixelbox_clearPixelBoxImage
+    //% block="clear image $img=variables_get(imageName)"
+
+    export function clearPixelBoxImage(img: PixelBoxImage): void {
+
+        for (let row = 0; row <= 7; row++) {
+            for (let col = 0; col <= 7; col++) {
+                img.pixel.setMatrixColor(col, row, Colors.Black);
+            }
+        }
+        img.pixel.show();
+    }
+    //==== END - SHOW IMAGE =============================================================
+
+
+    /************************************************************************
     /**** SHOW IMAGE ***********************************************************
     //************************************************************************
-    *Set pixel image ROWXX by clicking on pixels and selecting colors
+    *Set pixel image by clicking on pixels and selecting colors
     */
     //% blockId=Pixelbox_showPixelBoxImage
     //% block="show image $img=variables_get(imageName)"
@@ -141,15 +156,33 @@ namespace PixelBox{
     export function showPixelBoxImage(img: PixelBoxImage): void {
         
         for (let row = 0; row <= 7; row++){
-            for (let column = 0; column <= 7; column++) {
-               // img.pixel.setMatrixColor(column, row, neopixel.colors(colors[column])); //img.getColor(row, column)
+            for (let col = 0; col <= 7; col++) {
+                img.pixel.setMatrixColor(col, row, img.getColor(row, col)); //neopixel.colors(colors[column]));
             }
-        }
-    
+        }  
         img.pixel.show();
     }
     //==== END - SHOW IMAGE =============================================================
 
+
+    /************************************************************************
+    /**** SHOW IMAGE SHIFT ***********************************************************
+    //************************************************************************
+    *Set pixel image shifted according to x and y offsets
+    */
+    //% blockId=Pixelbox_showPixelBoxImageShift
+    //% block="show image $img=variables_get(imageName), xOffset=$xOffset, yOffset=$yOffset"
+
+    export function showPixelBoxImageShift(img: PixelBoxImage, xOffset: number, yOffset: number): void {
+
+        for (let row = 0; row <= 7; row++) {
+            for (let col = 0; col <= 7; col++) {
+                img.pixel.setMatrixColor(col+xOffset, row+yOffset, img.getColor(row, col)); //neopixel.colors(colors[column]));
+            }
+        }
+        img.pixel.show();
+    }
+    //==== END - SHOW IMAGE =============================================================
 
     //************************************************************************
     //**** SCRATCH ***********************************************************
