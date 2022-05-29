@@ -1,5 +1,5 @@
 
-enum Colors {
+/*enum Colors {
     //% block=red
     Red = 0xFF0000,
     //% block=orange
@@ -35,10 +35,10 @@ enum Colors {
     Gray = 0x999999,
     //% block=black
     Black = 0x000000
-}
+}*/
 
 //% color="#4B0082" colorSecondary="#FFFF00" icon="\u2592" block="Pixelbox"
-namespace PixelBox{
+//namespace PixelBox{
 
     /************************************************************************
     /**** DEFINE IMAGE **********************************************************
@@ -48,7 +48,7 @@ namespace PixelBox{
     // % blockId=Pixelbox_declareAnImage
     // % block="create an image $thisName"
 
-    export class PixelBoxImage {
+    /*export class PixelBoxImage {
         name: string;
         pixel: neopixel.Strip;
         image: Colors[];
@@ -74,7 +74,7 @@ namespace PixelBox{
         }
 
 
-    }
+    }*/
     //==== END - DEFINE IMAGE =======================================================
 
 
@@ -85,10 +85,10 @@ namespace PixelBox{
     */
     //% blockId=Pixelbox_declareAnImage
     //% block="create an image $thisName"
-    export function createImage(thisName: string) :PixelBoxImage {
+    /*export function createImage(thisName: string) :PixelBoxImage {
         let x = new PixelBoxImage(thisName);
         return x;
-    }
+    }*/
     //==== END - CREATE IMAGE ============================================================
 
 
@@ -110,7 +110,7 @@ namespace PixelBox{
     //% c06.shadow="colorNumberPicker"
     //% c07.shadow="colorNumberPicker"
 
-    export function setPixelboxColorsForCol(img: PixelBoxImage, row: number,
+    /*export function setPixelboxColorsForCol(img: PixelBoxImage, row: number,
         c00: number, c01: number, c02: number, c03: number, c04: number, c05: number, c06: number, c07: number): void {
   
         let colors = [c00, c01, c02, c03, c04, c05, c06, c07];
@@ -119,7 +119,7 @@ namespace PixelBox{
             img.pixel.setMatrixColor(column, row, neopixel.colors(colors[column]));
         }
         
-    }
+    }*/
     //==== END - SET IMAGE ROW COLORS ==============================================================
 
 
@@ -131,9 +131,9 @@ namespace PixelBox{
     //% blockId=Pixelbox_showPixelBoxImage
     //% block="show image $img=variables_get(imageName)"
 
-    export function showPixelBoxImage(img: PixelBoxImage): void {
+    /*export function showPixelBoxImage(img: PixelBoxImage): void {
         img.pixel.show();
-    }
+    }*/
     //==== END - SHOW IMAGE =============================================================
 
 
@@ -159,4 +159,4 @@ namespace PixelBox{
      //==== END - SCRATCH ============================================================
     */
     
-}
+//}
