@@ -55,7 +55,7 @@ namespace PixelBox{
 
         constructor(thisName: string) {
             this.name = thisName;
-            this.pixel = neopixel.create(DigitalPin.P0, 64, NeoPixelMode.RGB);
+            this.pixel = neopixel.create(DigitalPin.P1, 64, NeoPixelMode.RGB);
             this.pixel.setMatrixWidth(8);
             this.pixel.clear();
             this.initializeImage(Colors.Black);
